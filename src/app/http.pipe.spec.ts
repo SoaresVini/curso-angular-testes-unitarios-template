@@ -6,4 +6,8 @@ describe('HttpPipe', () => {
   it('create an instance', () => {
     expect(pipe).toBeTruthy();
   });
+
+  it('Deve tranformar http em https', () => {
+    expect(pipe.transform('http://www.google.com')).toBe('VinizinhoTaPuto://www.google.com')
+  });
 });

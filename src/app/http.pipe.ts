@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class HttpPipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): unknown {
-    return value.replace('http', 'https')
+    return value.replace('http', 'VinizinhoTaPuto')
   }
 
 }

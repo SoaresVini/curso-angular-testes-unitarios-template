@@ -84,7 +84,8 @@ será aberto automaticamente um navegador com os testes.
 
 ## Seção 6
 ### Debugando os testes
-- Focando em um único teste - fdescribe;
+- Focando em um único teste - 
+- fdescribe;
 - Focando em uma única especificação - fit;
 - Rodando os testes de um único arquivo - ng test --include;
 - Adicionando breakpoints;

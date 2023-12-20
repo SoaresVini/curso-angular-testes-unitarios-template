@@ -1,10 +1,10 @@
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-
 import { FixProblemsComponent } from './fix-problems.component';
-
-import {MatDialogModule} from '@angular/material/dialog'
+import {MatDialogModule} from "@angular/material/dialog";
+import {MAT_FORM_FIELD} from "@angular/material/form-field";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('FixProblemsComponent', () => {
   let component: FixProblemsComponent;
@@ -13,6 +13,17 @@ describe('FixProblemsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ FixProblemsComponent ],
+      providers: [
+        {
+          provide: MAT_DIALOG_DATA,
+          useValue: {}
+        },
+      ],
+      imports: [
+        MatDialogModule,
+        ReactiveFormsModule,
+        FormsModule
+      ]
     })
     .compileComponents();
 

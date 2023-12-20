@@ -21,4 +21,8 @@ describe('TestingPipesDirectiveRouteComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Deve transformar o http em https', () => {
+
+  });
 });
